@@ -7,8 +7,9 @@ Record1.
 -------------
 #### Git❕
 ##### 깃으로 처음 협업 할 때의 기본 세팅을 기재 
+
+* * *
 #### Git->Local Repository❕
-* * * 
 ##### 1.git clone url (url:작업할 프로젝트를 fork하거나, 가져왔을때 git의 소스 코드를 가져오는 명령어이다. root project의 url이 아닌 본인 저장소 url)
 ##### 2.git remote add upstream url (url:root project 다른 협업자가 push하거나 변동이 있을때 기본 저장소에서 소스를 가져오기위한 remote local 저장소이다.)
 ##### 3.git fetch upstream & git merge upstream/master (remote 저장소에 root 저장소에 업로드된 소스를 fetch하고, 본인 로컬 저자송에 merge 한다. 이를 합친 과정이 pull이다.)
