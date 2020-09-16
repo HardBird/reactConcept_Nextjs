@@ -7,9 +7,11 @@ Record1.
 -------------
 #### Git❕
 ##### 깃으로 처음 협업 할 때의 기본 세팅을 기재 
-
+###### Accept Current Change -> 헤드 부분을 적용
+##### Accept Incoming Change -> 변경된 부분을 적용(병합 대상이 된 브랜치의 내용으로 변경됨. 위에서 보여준 경우가 이에 해당됨)
+##### Accept Both Change -> 둘다 적용(말그대로 헤드와 변경된 부분 둘다 남겨준다.
 * * *
-#### Git->Local Repository❕
+#### Git->Local Repository ❕
 ##### 1.git clone url (url:작업할 프로젝트를 fork하거나, 가져왔을때 git의 소스 코드를 가져오는 명령어이다. root project의 url이 아닌 본인 저장소 url)
 ##### 2.git remote add upstream url (url:root project 다른 협업자가 push하거나 변동이 있을때 기본 저장소에서 소스를 가져오기위한 remote local 저장소이다.)
 ##### 3.git fetch upstream & git merge upstream/master (remote 저장소에 root 저장소에 업로드된 소스를 fetch하고, 본인 로컬 저자송에 merge 한다. 이를 합친 과정이 pull이다.)
@@ -50,7 +52,7 @@ Record1.
 변경된 부분만을 렌더링 해주기에 서버부담이 적다. 
 * * * 
 #### MVC&Flux Pattern 🤡
-MVC에서는 애플리케이션이 점점 복잡해질수록, 컨트롤러가 많아지면서 서버 로직이 복잡하고 부담이 가기시작한ㄷ.
+MVC에서는 애플리케이션이 점점 복잡해질수록, 컨트롤러가 많아지면서 서버 로직이 복잡하고 부담이 가기시작한.
 이를 해결하기 위해서 나온 패턴이 Flux패턴인데 이는 여러 컨트롤러를 하나의 Store를 만들어서 클라이언트가 실행(action)을 할 때마다,
 Dispatch를 통해서 재귀적으로 사용했던 컨트롤러에 접근해서 로직을 간단하게 만든다 리액트에서는 React-Redux/React-Context를 사용하여 만들 수 있다.
 * * * 
