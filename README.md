@@ -20,7 +20,27 @@ Record1.
 ##### 5.git commit -m "msg" (PR에 올릴 때,git에 찍히는 메시지를 남긴다.)
 ##### 6.git push (커밋이 완료되면 최종적으로 깃 레파지토리에 본인이 작업한걸 보낸다.)
 ##### 7.이후 사이트에서 pull request를 클릭하여서 작업한 것을 root 저장소에 합쳐주자
-* * * 
+* * *
+#### 다른 브랜치의 작업을 옮기는 방법 ❕
+##### 1.git add . 깃 작업을 추가한다
+##### 2.git stash 기본적으로 stash는 스택 구조를 가지고 있다는 개념을 가지자. 스택에다가 add한 자료들을 넣어준다
+##### 3.git checkout 브랜치이름 브랜치이름으로 브랜치를 이동한다 여기서 브랜치를 확인하는 방법은 gitbranch -a를 하면 된다.
+##### 4.git stash pop stash 스택에 담겨있는 내용을 해당 브랜치에서 꺼낸다 
+* * *
+#### 깃 브랜치 용어 
+##### git init/git remote add를 한 가정하에 시작한다. (remote는 origin 이라 가정)
+##### 1.git branch 브랜치이름 브랜치이름에 브랜치를 판다 
+##### 2.git checkout 브랜치이름 브랜치이름으로 이동한다
+##### 3.git push/pull origin 브랜치이름 (pull 브랜치로부터 내용을 받아온다 push 로컬작업을 브랜치로 전송한다. master로 하면 원격저장소에 대한 명령이 된다.)
+* * *
+#### 웹 작업을 pull 했는데 웹팩오류가 나타날때 
+##### 1.노드모듈과 yarn.lock을 제거해준다.
+##### 2.npm install을 설치해준다.
+##### 3.yarn install도 실시해줘서 기본적인 패키지를 재설치한다. 
+##### 처음부터 .gitignore를 해주면 되는데, 불가피한 상황이 오면 이렇게하자 ... 
+
+
+
 #### [Cookie&Session&Cache](https://www.youtube.com/watch?v=OpoVuwxGRDI) 🥨
 ##### Cookie
 쿠키는 **클라이언트**가 가지고 있는 것, 임의로 고치거나 지울 수 있기에 보안성이 취약해 가벼운 정보들로 이루어져 있다.
