@@ -92,6 +92,9 @@ src경로에서 context라는 폴더를 만든 후에 context 구조를 만들�
 * * * 
 #### Javascript local storage 👌🏻
 JWT 자바토큰을 프론트엔드단에서 관리하면서 토큰을 기반으로한 이벤트를 제어하기 위한 자바스크립트 기술이다.
+기본적으로 사용은 localstroage.setitem('이름',value)로 선언하면 되고 기본적인 데이터형은 string 이다. 이를 사용하는 이유는 데이터들이 새로고침을 하면 날아가는 context와다르게
+사용자의 웹에 쿠키형태로 데이터를 임시저장한다. 주로 토큰값 같은 것을 저장할 때 사용하고 값을 가져올때는 localstroage.getitem('이름')으로 가져 올 수 있다. 
+안드로이드에서 sharedpreferance 같은 개념으로 사용한다.
 #### Javascript Hoisting 
 HOC처럼 스크립트내에 선언한 변수를 어디서든 사용할 수 있게 전역변수처리로 위로 끌어올려서 사용하는 자바스크립트 기술이다.
 
