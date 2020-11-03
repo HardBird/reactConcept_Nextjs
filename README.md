@@ -11,11 +11,11 @@ Record1.
 ##### Accept Incoming Change -> 변경된 부분을 적용(병합 대상이 된 브랜치의 내용으로 변경됨. 위에서 보여준 경우가 이에 해당됨)
 ##### Accept Both Change -> 둘다 적용(말그대로 헤드와 변경된 부분 둘다 남겨준다.
 * * *
-#### Git->Local Repository ❕
+#### Git->Local Repository ❕ (fork작업)
 ##### 1.git clone url (url:작업할 프로젝트를 fork하거나, 가져왔을때 git의 소스 코드를 가져오는 명령어이다. root project의 url이 아닌 본인 저장소 url)
 ##### 2.git remote add upstream url (url:root project 다른 협업자가 push하거나 변동이 있을때 기본 저장소에서 소스를 가져오기위한 remote local 저장소이다.)
 ##### 3.git fetch upstream & git merge upstream/master (remote 저장소에 root 저장소에 업로드된 소스를 fetch하고, 본인 로컬 저자송에 merge 한다. 이를 합친 과정이 pull이다.)
-#### Local Repository->Git ❕
+#### Local Repository->Git ❕ (fork작업)
 ##### 4.git add . (본인이 작업한 파일을 PR에 올릴 준비를 한다.)
 ##### 5.git commit -m "msg" (PR에 올릴 때,git에 찍히는 메시지를 남긴다.)
 ##### 6.git push (커밋이 완료되면 최종적으로 깃 레파지토리에 본인이 작업한걸 보낸다.)
