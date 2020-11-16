@@ -83,6 +83,11 @@ MVC에서는 애플리케이션이 점점 복잡해질수록, 컨트롤러가 �
 이를 해결하기 위해서 나온 패턴이 Flux패턴인데 이는 여러 컨트롤러를 하나의 Store를 만들어서 클라이언트가 실행(action)을 할 때마다,
 Dispatch를 통해서 재귀적으로 사용했던 컨트롤러에 접근해서 로직을 간단하게 만든다 리액트에서는 React-Redux/React-Context를 사용하여 만들 수 있다.
 * * * 
+#### [React UseState](https://velog.io/@cada/React%EC%9D%98-setState%EA%B0%80-%EC%9E%98%EB%AA%BB%EB%90%9C-%EA%B0%92%EC%9D%84-%EC%A3%BC%EB%8A%94-%EC%9D%B4%EC%9C%A0)
+기본적으로 React에서 변수처럼 사용하는 호출 인자. 이는 React가 리렌더링이 되거나 그럴때 값이 증발하지 않는다. (물론 새로고침에는 날라갑니다..)
+라이프사이클 구조상 DidMount에서 값을 계산하고 렌더를 시켜줘야만 원하는 값을 직접 확인할 수 있다. 이는 렌더속도가 느려서가아닌 비동기적으로 호출되기 때문이다.
+이는 이벤트들이 끝나기 직전에 일괄적으로 값이 업데이트되고 리렌더링이 된다. 그렇기에 중간에 사용하고 싶다면 componentDidUpdate나 updater 인자를 사용하여 호출하자.
+근데 라이프사이클을 이해하고 있다면 전자에 언급한 DidUpdate를 UseEffect 처럼 사용해주는게 더 이해하기 쉬울 것이다 !.
 #### [Redux.context](https://velog.io/@velopert/typescript-context-api) 😊
 Flux 패턴에 사용되는 React문법이다. 이는 Redux와 같이 사용하며 기본적으로 index.ts 루트 컨포넌트에 씌워주면서, 전역으로 데이터를 사용할 수 있게끔 하는 기술이다.
 src경로에서 context라는 폴더를 만든 후에 context 구조를 만들고 provider라는 폴더를 만든 다음에 루트 컨포넌트에 Dispatch하여서, 씌워준다. 
