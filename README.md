@@ -155,14 +155,14 @@ JS의 특징임 뭐냐 ? if문에서 일치연산자의 특징이다 if문에서
 React.useState에서 배열의 값을 넣을때 값을 복제하고 스프레드 연산자로 원하는 값을 연산하는 것처럼 코딩테스트에서도 복제를 생활화하자.
 -coming : Server Deno
 * * * 
-#### Forerver 가동법
+#### Forerver 가동법 (PM2는 forever 대신 pm2를 써주면 된다.)
 cmd에서 포트 죽이는법
 1. cmd netstat -ano
 2. 0,0,0,0 뒤의 포트의 pid확인
 3.taskkill /f /pid pid
 
-forever list 로 돌아가는 프로세스 확인
-forever stop [index]번호로 죽인다
-netstat -tnpl로 돌아가는 프로세스확인
-kill -9 [pid]로 프로세스 죽인다.
-forever start -c "yarn start" ./로 실행
+1. forever list 로 돌아가는 프로세스 확인
+2. forever stop [index]번호로 죽인다
+3. netstat -tnpl로 돌아가는 프로세스확인
+4. kill -9 [pid]로 프로세스 죽인다.
+5. forever start -c "yarn start" ./로 실행
