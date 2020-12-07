@@ -161,7 +161,7 @@ cmd에서 포트 죽이는법
 1. cmd netstat -ano
 2. 0,0,0,0 뒤의 포트의 pid확인
 3.taskkill /f /pid pid
-
+* * *
 forever 관리법
 1. forever list 로 돌아가는 프로세스 확인
 2. forever stop [index]번호로 죽인다
